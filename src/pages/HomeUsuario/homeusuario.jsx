@@ -8,7 +8,7 @@ import DashboardUsuario from '../DashboardUsuario/dashboardusuario.jsx';
 
 
 
-export default function Home() {
+export default function HomeUsuario() {
  
   return (
        
@@ -28,13 +28,8 @@ export default function Home() {
         <Link to="/cadastro">Promoção</Link>
 
       </nav>
-        <nav>
-          <Link to="/login">Entrar</Link>
-          <Link to="/cadastro">Cadastrar</Link>
-
-        </nav>
-
         
+        <DashboardUsuario />
       </header>
 
       <section className="banner">

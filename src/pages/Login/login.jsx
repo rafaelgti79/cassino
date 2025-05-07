@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../AuthContext';
+import './login.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -20,7 +21,7 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className='login-container'>
       <h2>Login</h2>
       <form onSubmit={handleLogin}>
         <input
@@ -37,6 +38,9 @@ const Login = () => {
         /><br />
         <button type="submit">Entrar</button>
       </form>
+
+      <Link className="cadastro" to={"/cadastro"}>Cadastro</Link>
+
     </div>
   );
 };
