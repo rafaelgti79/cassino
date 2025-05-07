@@ -13,9 +13,9 @@ function App() {
 
   return (
     <AuthProvider>
-    <Router>
+    <Router basename="/cassino">
       <Routes>
-      <Route path="/cassino" element={<Home />} />
+      <Route path="/" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/cadastro" element={<Cadastro />} />
       <Route path="/dashboard" element={<Dashboard />} />
