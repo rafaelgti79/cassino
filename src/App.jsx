@@ -7,6 +7,7 @@ import Cadastro from './pages/Cadastro/cadastro.jsx';
 import Dashboard from '../src/pages/components/Dashboard/dashboard.jsx';
 import { AuthProvider } from './AuthContext.jsx';
 import RotaProtegida from './RotaProtegida.jsx';
+import DashboardUsuario from './pages/DashboardUsuario/dashboardusuario.jsx';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path="/login" element={<Login />} />
       <Route path="/cadastro" element={<Cadastro />} />
       <Route path="/dashboard" element={<Dashboard />} />
+      <Route path="/dashboardusuario" element={<DashboardUsuario />} />
       <Route
             path="/home" element={
               <RotaProtegida>

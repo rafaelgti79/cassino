@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../Home/home.css';
 import TigrinhoGame from '../components/TigrinhoGame';
+import DashboardUsuario from '../DashboardUsuario/dashboardusuario.jsx';
 
 
 
@@ -12,7 +13,11 @@ export default function Home() {
   return (
        
     <div className="home-container">
+      <div className="main-jogos">
+  </div>
+    
 
+  
       <header className="header">
         <h1>🏆 Cassino Girassol</h1>
 
@@ -28,6 +33,8 @@ export default function Home() {
           <Link to="/cadastro">Cadastrar</Link>
 
         </nav>
+
+        <DashboardUsuario />
       </header>
 
       <section className="banner">
